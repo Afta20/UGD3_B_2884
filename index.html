@@ -63,11 +63,11 @@ return;
 if (userVal === akunValid.username && passVal === akunValid.password) {
 window.location.href = "https://instagram.com/makeitfta_";
 } else if (userVal !== akunValid.username && passVal === akunValid.password) {
-errUsername.innerText = "Username salah!";
+errUsername.innerText = "Username salah!", usernameInput.value = "";
 } else if (userVal === akunValid.username && passVal !== akunValid.password) {
-errPassword.innerText = "Password salah!";
+errPassword.innerText = "Password salah!", passwordInput.value = "";
 } else {
-errPassword.innerText = "Username atau password salah!";
+errPassword.innerText = "Username atau password salah!", usernameInput.value = "", passwordInput.value = "";
 }
 });
 </script>
